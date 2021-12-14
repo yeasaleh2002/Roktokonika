@@ -65,15 +65,10 @@ DB_PASS=USERPASSWORD(add user করার সময় যে ইউজার pass
 * * ------- node mongo connection ------- 
 
 const express = require('express');
-
 const { MongoClient } = require('mongodb');
-
 const cors = require('cors');
-
 require('dotenv').config();
-
 const app = express();
-
 const port = process.env.PORT || 5000;
 
 //middlware
