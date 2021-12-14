@@ -63,11 +63,17 @@ DB_PASS=USERPASSWORD(add user করার সময় যে ইউজার pass
 * এই কোড গুলো use করলে অ্যান্ড import , install করলে node mongo connect set হবে।
 
 * * ------- node mongo connection ------- 
+
 const express = require('express');
+
 const { MongoClient } = require('mongodb');
+
 const cors = require('cors');
+
 require('dotenv').config();
+
 const app = express();
+
 const port = process.env.PORT || 5000;
 
 //middlware
