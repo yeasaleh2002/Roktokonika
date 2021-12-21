@@ -4,7 +4,7 @@ import './UpdateBloodDonorRegistration.css';
 const UpdateBloodDonorRegistration = () => {
     return (
         <div>
-            <h1>UpdateBloodDonorRegistration</h1>
+            <h1>Update Blood Donor Info coming soon!</h1>
         </div>
     );
 };

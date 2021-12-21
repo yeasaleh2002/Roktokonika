@@ -26,7 +26,7 @@ const RoktokonikaSupportHumanity = ({supportteam}) => {
                         />
 
                         <CardContent data-aos="fade-out">
-                        <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h6" gutterBottom component="div">
+                        <Typography sx={{color: 'red', fontWeight: 'bold'}} variant="h6" gutterBottom component="div">
                                 {name}
                         </Typography>
                         <Typography gutterBottom component="div">

@@ -31,7 +31,7 @@ const AddPost = () => {
       {/* add Product form */}
         <form onSubmit={handleSubmit(onSubmit)}>
             <input type='text' {...register("picture")} placeholder="Post image link"/>
-            <input type='text'  {...register("name") } defaultValue={user?.displayName} disabled placeholder="Your Name"/>
+            <input type='text' {...register("name") } defaultValue={user?.displayName} placeholder="Your Name"/>
             <textarea type="textArea" {...register("posts", { required: true, maxLength: 1000 })} placeholder="Write Your Post" />                  
             <input className="submit-button" type="submit" />
         </form>

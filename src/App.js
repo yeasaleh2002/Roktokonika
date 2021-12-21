@@ -33,6 +33,7 @@ import Volunteers from './Components/Home/Volunteers/Volunteers/Volunteers';
 import RoktokonikaCleanTeam from './Components/Home/Volunteers/RoktokonikaCleanTeam/RoktokonikaCleanTeam';
 import RoktokonikaBloodDonorTeam from './Components/Home/Volunteers/RoktokonikaBloodDonorTeam/RoktokonikaBloodDonorTeam';
 import RoktokonikaSupportHumanityTeam from './Components/Home/Volunteers/RoktokonikaSupportHumanityTeam/RoktokonikaSupportHumanityTeam';
+import NotFound from './Components/Shared/NotFound/NotFound';
 
 
 function App() {
@@ -76,13 +77,14 @@ function App() {
                 </Route>
                     
 
-                <Route path="/volunteers" element={<Volunteers> </Volunteers>} >
+                <Route path="/volunteers" element={<PrivateRoute><Volunteers> </Volunteers></PrivateRoute>} >
                   <Route path="/volunteers/" element={<RoktokonikaBloodDonorTeam></RoktokonikaBloodDonorTeam>} />
-                  <Route path="/volunteers/roktokonikaBloodDonorTeam/*" element={<RoktokonikaBloodDonorTeam></RoktokonikaBloodDonorTeam>} />
+                  <Route path="/volunteers/roktokonikaBloodDonorTeam" element={<RoktokonikaBloodDonorTeam></RoktokonikaBloodDonorTeam>} >
+                  </Route>
                   <Route path="/volunteers/roktokonikaCleanTeam" element={<RoktokonikaCleanTeam></RoktokonikaCleanTeam>} />
                   <Route path="/volunteers/roktokonikaSupportHumanityTeam" element={<RoktokonikaSupportHumanityTeam></RoktokonikaSupportHumanityTeam>} />                 
                 </Route>
-
+                <Route path="*" element={<NotFound></NotFound>}></Route>
               </Routes>
          
         </BrowserRouter>

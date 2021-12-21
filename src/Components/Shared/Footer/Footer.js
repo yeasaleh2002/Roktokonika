@@ -1,9 +1,9 @@
-import { Divider, Grid, Link, Typography } from '@mui/material';
+import { Button, Divider, Grid, Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-// import { NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -13,7 +13,7 @@ useEffect(() => {
    Aos.init({ duration: 2500 })
 }, []);
 
-
+  
     return (
         <Box  sx={{ color: 'white' , background: '#363736' }}>
           
@@ -44,21 +44,11 @@ useEffect(() => {
                            Quice To Access
                         </Typography>
                        
-                        <Typography variant="h6" > Post
-                        {/* <NavLink style={{ color: 'white', textDecoration: 'none' }} to="/home">Home</NavLink>   */}
-                        </Typography>
-                       
-                        <Typography variant="h6" > Voluenter
-                        {/* <NavLink style={{ color: 'white', textDecoration: 'none' }} to="/products">Products</NavLink>   */}
-                        </Typography>
-                       
-                        <Typography variant="h6" > About
-                        {/* <NavLink style={{ color: 'white', textDecoration: 'none' }} to="/contact">Contact</NavLink>   */}
-                        </Typography>
-                       
-                        <Typography variant="h6" > Login
-                        {/* <NavLink style={{ color: 'white', textDecoration: 'none' }} to="/login">Login</NavLink>   */}
-                        </Typography>                       
+                        <NavLink  style={{textDecoration: 'none', color: 'white'}}  to="/posts"> <Button color="inherit">Post</Button> </NavLink> <Divider sx={{background: 'white', width: '25%'}}></Divider>
+                    <NavLink  style={{textDecoration: 'none', color: 'white'}}  to="/volunteers"> <Button color="inherit">Volunteers</Button> </NavLink><Divider sx={{background: 'white', width: '25%'}}></Divider>
+                    <NavLink  style={{textDecoration: 'none', color: 'white'}}  to="/contact"> <Button color="inherit">Contact</Button> </NavLink><Divider sx={{background: 'white', width: '25%'}}></Divider>
+                    <NavLink  style={{textDecoration: 'none', color: 'white'}}  to="/teams"> <Button color="inherit">Team</Button> </NavLink><Divider sx={{background: 'white', width: '25%'}}></Divider>
+                           
                 </Grid>
                  
                 </Grid>              

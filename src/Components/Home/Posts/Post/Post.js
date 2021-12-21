@@ -17,7 +17,12 @@ const Post = ({post}) => {
 
 
     return (
-        <Grid  sx={{ my: 2}} item xs={12}  md={12} lg={6}>
+        <>
+        <Grid  item xs={0}  md={0} lg={2}>
+
+        </Grid>
+
+        <Grid  sx={{ my: 2}} item xs={12}  md={12} lg={8}>
                    <Box className='post' data-aos="fade-left" >
                         <CardContent>
                         <Typography sx={{color: 'red'}} gutterBottom component="div">
@@ -31,7 +36,7 @@ const Post = ({post}) => {
                         <CardMedia
                             data-aos="zoom-out-down"
                             component="img"
-                            style={{ borderRadius: '10px', width: '420px', height: '220px', margin: '0 auto' }}
+                            style={{ borderRadius: '10px', width: '100%', height: '100%', margin: '0 auto' }}
                             image={picture}
                             className="team-member"
                             alt="green iguana"
@@ -39,7 +44,10 @@ const Post = ({post}) => {
                   </Box>
             
             </Grid>
+            <Grid   item xs={0}  md={0} lg={2}>
 
+            </Grid>
+            </>
     );
 };
 
