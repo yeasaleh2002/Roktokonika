@@ -1,0 +1,8 @@
+
+.cleanTeam:hover {
+    transition: .9s;
+    box-shadow: 5px 10px 5px gray;
+    border-radius: 10px;
+    background-color: #4A4849;
+    color: whitesmoke;
+}

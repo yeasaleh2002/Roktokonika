@@ -13,20 +13,20 @@
 
 
 
-
+#
 # Front End
   ----  total Installed: -----
 1. npx create-react-app roktokonika
 2. npm install react-router-dom
 3. npm install @mui/material @emotion/react @emotion/styled
 4. npm install @mui/icons-material
-5. 
-6. 
+5. npm i react-hook-form
+6. npm i axios
 7. 
 8. 
 
 
-
+#
 # Back-End
 
 -- Total Installed ----- 
@@ -120,6 +120,10 @@ app.listen(port, () => {
 * * -------- node mongo connection --------
 
 
+* এরপর database and collection set করে দিতে হবে। 
+
+* কোন data objectId(singleID) দিয়ে access করতে চাইলে আগে objectId import করে নিতে হবে। 
+  * const { ObjectID } = require('bson'); এরপর objectId দিয়ে singleId বা একটা নিদিষ্ট কিছুকে access করা যাবে।
 
 
 
@@ -130,9 +134,7 @@ app.listen(port, () => {
 
 
 
-
-
-
+#
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

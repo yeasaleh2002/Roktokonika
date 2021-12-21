@@ -1,14 +1,23 @@
-import { Divider, Grid, Typography } from '@mui/material';
+import { Divider, Grid, Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 // import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
+
+   
+useEffect(() => {
+   Aos.init({ duration: 2500 })
+}, []);
+
+
     return (
         <Box  sx={{ color: 'white' , background: '#363736' }}>
           
-             <Box >
+             <Box  data-aos="flip-left">
            
              <Grid   sx={{paddingLeft: "20px", paddingRight: "20px" }} container spacing={1}>
 
@@ -18,7 +27,7 @@ const Footer = () => {
                          CONTACT INFO
                      </Typography>
                      <Typography style={{ color: 'white' }}>
-                       <b  style={{ color: '#FBFCFC', fontSize: '25px' }}>Address : </b>  Pangsha , Rajbari , Dhaka
+                     <b  style={{ color: '#FBFCFC', fontSize: '25px' }}>Address : </b>  Pangsha , Rajbari , Dhaka
                      </Typography>
                      <Typography variant="h6" sx={{ my: 2 }} style={{ color: 'white', fontSize: 14, fontWeight: 300 }}>
                      <b  style={{ color: '#FBFCFC', fontSize: '25px' }}>Phone : </b> 012 345 6789
@@ -58,9 +67,13 @@ const Footer = () => {
            </Box>
              
                 {/* footer last part */}
-             <Box sx={{paddinTop: '20px'}}> 
-                <Typography variant="h5" style={{ color: 'white' , padding: '30px' , textAlign: 'center' }}>
-                 COPYRIGHT © 2021 ROKTOKONIKA. ALL RIGHTS RESERVED.
+             <Box  data-aos="flip-right" sx={{paddinTop: '20px'}}> 
+                <Typography variant="h6" style={{ color: 'white' , padding: '15px' , textAlign: 'center' }}>
+                 COPYRIGHT © 2021 ROKTOKONIKA & YEASALEH. ALL RIGHTS RESERVED. 
+                </Typography>
+                <Typography p={2} textAlign={'end'}>Develop and design by <Link target={'blank'} sx={{color: "tomato"}} href="https://yeasaleh-portfolio.web.app/" underline="hover">
+                  {'Yeasaleh'}
+                  </Link>
                 </Typography>
             </Box>
        </Box>

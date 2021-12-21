@@ -1,0 +1,6 @@
+.register:hover{
+    box-shadow: 5px 10px 10px gray;
+    background-color: azure;
+    transition: 0.7s;
+    border-radius: 5px;
+}

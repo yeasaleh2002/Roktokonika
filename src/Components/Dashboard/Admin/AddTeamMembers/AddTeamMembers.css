@@ -1,0 +1,16 @@
+.add-Team-member form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.add-Team-member form input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.submit-button {
+    color: whitesmoke;
+    background-color: goldenrod;
+}

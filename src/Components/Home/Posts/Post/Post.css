@@ -1,0 +1,9 @@
+
+.post:hover {
+    
+    transition: .7s;
+    background-color: antiquewhite;
+    color: gray;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px 5px gray;
+}
