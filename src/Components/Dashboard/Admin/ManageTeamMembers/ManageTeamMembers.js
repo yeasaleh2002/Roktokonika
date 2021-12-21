@@ -11,7 +11,7 @@ const ManageTeamMembers = () => {
 
             // data load from database
             useEffect(() => {
-                fetch(`http://localhost:5000/teams`)
+                fetch(`https://boiling-cove-07763.herokuapp.com/teams`)
                 .then(response => response.json())
                 .then(data => setManageTeamMembers(data))
             }, [])
@@ -22,7 +22,7 @@ const ManageTeamMembers = () => {
                
                 const proceed = window.confirm('Are you sure, you want to delete?');
                 if (proceed) {
-                fetch(`http://localhost:5000/teams/${id}`, {
+                fetch(`https://boiling-cove-07763.herokuapp.com/teams/${id}`, {
                   method: "DELETE"
                 })
                   .then((res) => res.json())

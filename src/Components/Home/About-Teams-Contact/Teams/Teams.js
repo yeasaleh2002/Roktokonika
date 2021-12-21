@@ -15,7 +15,7 @@ const Teams = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/teams`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/teams`)
             .then(response => response.json())
             .then(data => setTeams(data))
         }, [])

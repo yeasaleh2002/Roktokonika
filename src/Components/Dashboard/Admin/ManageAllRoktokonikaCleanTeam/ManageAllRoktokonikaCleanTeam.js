@@ -8,7 +8,7 @@ const ManageAllRoktokonikaCleanTeam = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/roktokonikaClean`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaClean`)
             .then(response => response.json())
             .then(data => setManageCleanTeamMembers(data))
         }, [])
@@ -19,7 +19,7 @@ const ManageAllRoktokonikaCleanTeam = () => {
            
             const proceed = window.confirm('Are you sure, you want to delete?');
             if (proceed) {
-            fetch(`http://localhost:5000/roktokonikaClean/${id}`, {
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaClean/${id}`, {
               method: "DELETE"
             })
               .then((res) => res.json())

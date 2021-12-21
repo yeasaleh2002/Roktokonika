@@ -12,7 +12,7 @@ const RoktokonikaSupportHumanityTeam = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/roktokonikaSupport`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaSupport`)
             .then(response => response.json())
             .then(data => setSupportTeams(data))
         }, [])

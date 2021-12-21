@@ -13,7 +13,7 @@ const AddTeamMembers = () => {
  const onSubmit = data => {
     
 
-     axios.post('http://localhost:5000/teams', data )
+     axios.post('https://boiling-cove-07763.herokuapp.com/teams', data )
      .then(res => {
         
          if(res.data.insertedId) {

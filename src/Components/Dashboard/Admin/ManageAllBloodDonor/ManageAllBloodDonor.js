@@ -8,7 +8,7 @@ const ManageAllBloodDonor = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/roktokonikaBlood`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaBlood`)
             .then(response => response.json())
             .then(data => setManageBloodDonors(data))
         }, [])
@@ -19,7 +19,7 @@ const ManageAllBloodDonor = () => {
            
             const proceed = window.confirm('Are you sure, you want to delete?');
             if (proceed) {
-            fetch(`http://localhost:5000/roktokonikaBlood/${id}`, {
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaBlood/${id}`, {
               method: "DELETE"
             })
               .then((res) => res.json())

@@ -12,7 +12,7 @@ const RoktokonikaBloodDonorTeam = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/roktokonikaBlood`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaBlood`)
             .then(response => response.json())
             .then(data => setBloodTeams(data))
         }, [])

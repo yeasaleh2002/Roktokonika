@@ -13,7 +13,7 @@ const BloodDonorRegistration = () => {
  /* onSubmit handle declare */
  const onSubmit = data => {
      console.log(data);
-     axios.post('http://localhost:5000/roktokonikaBlood', data )
+     axios.post('https://boiling-cove-07763.herokuapp.com/roktokonikaBlood', data )
      .then(res => {
          if(res.data.insertedId) {
              alert('added successfully');

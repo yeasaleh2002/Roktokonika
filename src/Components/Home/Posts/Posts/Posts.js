@@ -15,7 +15,7 @@ const Posts = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/posts`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/posts`)
             .then(response => response.json())
             .then(data => setPosts(data))
         }, [])

@@ -1,11 +1,23 @@
 # Getting Started with Roktokonika
 
-# Live Website: 
+# Live Website: https://roktokonika-e8bd3.web.app/
 
 # Website Feature
 
-1. 
-2. 
+1. Must be a volunteer type website.
+2. Home page will have a header (simple navbar), banner, volunteers, team, and footer.
+3. Make the website responsive. Make sure the site looks different on desktop and mobile responsive. 
+4. use .env file on the server, .env.local file on the client to hide db user and password, etc. Also use .gitignore file
+5. Add some animation while applicable.
+6. Make the footer little more realistic.
+7. Use a database to store information. It could be mongodb atlas or any other noSQL database.
+8. For  testing purpose please add one admin with the email address: roktokonika707@gmail.com  with password: roktokonikaadmin
+9. Implement email/ password (login/Register) based login system. The registration form should have the name and once a user is logged in, the user name, and the logout button should appear on the header which will log out the user once clicked. Displaying username on the header  is must.
+10. You must be logged in to go to the Volunteers component.
+11. If user logs in, then he can go to dashboard component and see write post, register support, register clean, register donor route.
+12. Will show roktokonika team members on team route.
+13. If you register from register donor route, data will be added to blood donor nested route. If you register from register clean route, data will be added to clean team nested route. If you register from register support route, data will be added to support team nested route.
+14. If admin logs in then he can go to dashboard component write post, register support, register clean, register donor, make admin, manage all post, add team member, manage team, manage blood donor, manage clean team, manage supporters.
 
 
 
@@ -13,6 +25,15 @@
 
 
 
+
+
+
+
+
+
+#
+#
+#
 #
 # Front End
   ----  total Installed: -----

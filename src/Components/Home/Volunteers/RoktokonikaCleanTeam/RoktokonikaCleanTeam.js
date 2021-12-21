@@ -12,7 +12,7 @@ const RoktokonikaCleanTeam = () => {
 
         // data load from database
         useEffect(() => {
-            fetch(`http://localhost:5000/roktokonikaClean`)
+            fetch(`https://boiling-cove-07763.herokuapp.com/roktokonikaClean`)
             .then(response => response.json())
             .then(data => setCleanTeams(data))
         }, [])

@@ -12,7 +12,7 @@ const RoktokonikaCleanTeamRegistration = () => {
  /* onSubmit handle declare */
  const onSubmit = data => {
      console.log(data);
-     axios.post('http://localhost:5000/roktokonikaClean', data )
+     axios.post('https://boiling-cove-07763.herokuapp.com/roktokonikaClean', data )
      .then(res => {
          if(res.data.insertedId) {
              alert('added successfully');

@@ -14,7 +14,7 @@ const AddPost = () => {
  /* onSubmit handle declare */
  const onSubmit = data => {
      console.log(data);
-     axios.post('http://localhost:5000/posts', data )
+     axios.post('https://boiling-cove-07763.herokuapp.com/posts', data )
      .then(res => {
          if(res.data.insertedId) {
              alert('added successfully');
