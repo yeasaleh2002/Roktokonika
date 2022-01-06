@@ -43,8 +43,8 @@ function App() {
          <BrowserRouter>
           
               <Routes>
-                <Route path="//" element={<Posts></Posts>} />
-                <Route path="//posts" element={<Posts></Posts>} />           
+                <Route path="/" element={<Posts></Posts>} />
+                <Route path="/posts" element={<Posts></Posts>} />           
                 <Route path="/login" element={<Login></Login>} />
                 <Route path="/register" element={<Register></Register>} />
                 <Route path="/teams" element={<Teams></Teams>} />   

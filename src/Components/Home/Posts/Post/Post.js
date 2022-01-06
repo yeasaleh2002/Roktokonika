@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 const Post = ({post}) => {
 
     
-    const { name, posts, picture } = post || '';
+    const { name, posts, image } = post || '';
 
     useEffect(() => {
         Aos.init({ duration: 2500 })
@@ -37,7 +37,7 @@ const Post = ({post}) => {
                             data-aos="zoom-out-down"
                             component="img"
                             style={{ borderRadius: '10px', width: '100%', height: '100%', margin: '0 auto' }}
-                            image={picture}
+                            image={image}
                             className="team-member"
                             alt="green iguana"
                         />

@@ -13,14 +13,36 @@ const AddPost = () => {
 
  /* onSubmit handle declare */
  const onSubmit = data => {
-     console.log(data);
+
+  /*   const formData = new FormData();
+    formData.append('image', data.image[0])
+    formData.append('name', data.name)
+    formData.append('posts', data.posts)
+     
+    const url = 'https://boiling-cove-07763.herokuapp.com/posts'
+    fetch(url, {
+        method: 'POST',
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.insertedId) {
+            alert('added successfully');
+            reset();
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+     */
      axios.post('https://boiling-cove-07763.herokuapp.com/posts', data )
      .then(res => {
          if(res.data.insertedId) {
              alert('added successfully');
              reset();
          }
-     })
+         });
+      
  }
 
     return (
@@ -30,8 +52,8 @@ const AddPost = () => {
       
       {/* add Product form */}
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input type='text' {...register("picture")} placeholder="Post image link"/>
-            <input type='text' {...register("name") } defaultValue={user?.displayName} placeholder="Your Name"/>
+            <input type='text' {...register("image", { required: true })} placeholder='Image Link'/>
+            <input type='text' {...register("name", { required: true })} defaultValue={user?.displayName} placeholder="Your Name"/>
             <textarea type="textArea" {...register("posts", { required: true, maxLength: 1000 })} placeholder="Write Your Post" />                  
             <input className="submit-button" type="submit" />
         </form>

@@ -1,7 +1,6 @@
-import { Button, Divider, Grid, Link, Typography } from '@mui/material';
+import { Button, Container, Divider, Grid, Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useEffect } from 'react';
-import Aos from 'aos';
+import React from 'react';
 import 'aos/dist/aos.css';
 import {  NavLink } from 'react-router-dom';
 
@@ -9,15 +8,11 @@ import {  NavLink } from 'react-router-dom';
 const Footer = () => {
 
    
-useEffect(() => {
-   Aos.init({ duration: 2500 })
-}, []);
-
   
     return (
         <Box  sx={{ color: 'white' , background: '#363736' }}>
           
-             <Box  data-aos="flip-left">
+             <Container>
            
              <Grid   sx={{paddingLeft: "20px", paddingRight: "20px" }} container spacing={1}>
 
@@ -53,11 +48,12 @@ useEffect(() => {
                  
                 </Grid>              
               
-              <Divider sx={{background: "white"}}/>
-           </Box>
+           </Container>
+           <Divider sx={{background: "white"}}/>
+
              
                 {/* footer last part */}
-             <Box  data-aos="flip-right" sx={{paddinTop: '20px'}}> 
+             <Box  sx={{paddinTop: '20px'}}> 
                 <Typography variant="h6" style={{ color: 'white' , padding: '15px' , textAlign: 'center' }}>
                  COPYRIGHT © 2021 ROKTOKONIKA & YEASALEH. ALL RIGHTS RESERVED. 
                 </Typography>
