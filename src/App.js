@@ -34,6 +34,9 @@ import RoktokonikaCleanTeam from './Components/Home/Volunteers/RoktokonikaCleanT
 import RoktokonikaBloodDonorTeam from './Components/Home/Volunteers/RoktokonikaBloodDonorTeam/RoktokonikaBloodDonorTeam';
 import RoktokonikaSupportHumanityTeam from './Components/Home/Volunteers/RoktokonikaSupportHumanityTeam/RoktokonikaSupportHumanityTeam';
 import NotFound from './Components/Shared/NotFound/NotFound';
+import PayNow from './Components/Dashboard/Users/PayNow/PayNow';
+import ManageBannerPost from './Components/Dashboard/Admin/ManageBannerPost/ManageBannerPost';
+import AddBannarImages from './Components/Dashboard/Admin/AddBannarImages/AddBannarImages';
 
 
 function App() {
@@ -63,8 +66,12 @@ function App() {
                     <Route path="/dashboard/updateBloodDonorRegistration" element={<PrivateRoute><UpdateBloodDonorRegistration></UpdateBloodDonorRegistration></PrivateRoute>} />
                     <Route path="/dashboard/roktokonikaCleanTeamRegistration" element={<PrivateRoute><RoktokonikaCleanTeamRegistration></RoktokonikaCleanTeamRegistration></PrivateRoute>} />
                     <Route path="/dashboard/roktokonikaSupportHumanityTeamRegistration" element={<PrivateRoute><RoktokonikaSupportHumanityTeamRegistration></RoktokonikaSupportHumanityTeamRegistration></PrivateRoute>} />
+                    
+                    <Route path="/dashboard/payNow" element={<PrivateRoute><PayNow></PayNow></PrivateRoute>} />
 
-
+                    <Route path="/dashboard/manageBannerPost"  element={<AdminRoute><ManageBannerPost></ManageBannerPost></AdminRoute> } />
+                    <Route path="/dashboard/addBanner"  element={ <AdminRoute> <AddBannarImages></AddBannarImages> </AdminRoute> } />
+                   
                     <Route path="/dashboard/manageAllPosts"  element={<AdminRoute><ManageAllPosts></ManageAllPosts></AdminRoute> } />
                     <Route path="/dashboard/addTeamMembers"  element={ <AdminRoute> <AddTeamMembers></AddTeamMembers> </AdminRoute> } />
                     <Route path="/dashboard/manageTeamMembers"  element={ <AdminRoute><ManageTeamMembers></ManageTeamMembers> </AdminRoute>} />
@@ -73,7 +80,7 @@ function App() {
                     <Route path="/dashboard/manageAllRoktokonikaCleanTeam"  element={<AdminRoute><ManageAllRoktokonikaCleanTeam></ManageAllRoktokonikaCleanTeam></AdminRoute>} />
                     <Route path="/dashboard/manageAllRoktokonikaSupportHumanityTeam"  element={<AdminRoute><ManageAllRoktokonikaSupportHumanityTeam></ManageAllRoktokonikaSupportHumanityTeam></AdminRoute>} />
                     <Route path="/dashboard/makeAdmin"  element={<AdminRoute><MakeAdmin></MakeAdmin></AdminRoute>} />
-               
+                                   
                 </Route>
                     
 

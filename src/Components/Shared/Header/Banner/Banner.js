@@ -21,21 +21,22 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     // imgPath: {bannar}
-    imgPath: 'https://scontent.fjsr8-1.fna.fbcdn.net/v/t39.30808-6/269627867_3073426722922977_2692702674766646725_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8631f5&_nc_eui2=AeE4Xb0BF6FA5znUUSdAUrs6-jdSiLQhYIv6N1KItCFgi5OayODM2KdJcd4G8pdrcT8us719kyGpipQm5xyNMzl3&_nc_ohc=SqHzQab6lz4AX8kFydB&tn=5luqzDoOS606bjhz&_nc_ht=scontent.fjsr8-1.fna&oh=00_AT_f1ZBX4qOLcITG0vuRpreSyJoCqhsKIw3cmTad2_vf5w&oe=61DBD8FC'
+    imgPath: 'https://i.ibb.co/CvH4gkn/donate3.jpg'
+
   },
   {
     // imgPath: {support1}
-    imgPath: 'https://scontent.fdac134-1.fna.fbcdn.net/v/t39.30808-6/263034689_441827677508987_4515360456735515423_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=b9115d&_nc_eui2=AeEJFriCeaNv_93Me-8nc3-rIUAY9Zbvck8hQBj1lu9yT9pGdOwByOug4bnbB0SuR9fKDyLTAvJjyNDfmB7sKtpz&_nc_ohc=xTJ24Gv2bMMAX9wJPAo&_nc_ht=scontent.fdac134-1.fna&oh=00_AT8w0594ErR2WTkUYMSEgrpYHb2VhRNJW4O6lLqn8lLECw&oe=61DB6A13'
+    imgPath: 'https://i.ibb.co/vktkBdw/support2.jpg'
 
   },
   {
     // imgPath: {support2}
-    imgPath: 'https://scontent.fdac134-1.fna.fbcdn.net/v/t39.30808-6/270174318_3079335092332140_7903246285836668751_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=b9115d&_nc_eui2=AeF7d6XL4EdRD6fPMy1GPKZLj0qCciSEhEWPSoJyJISERcEXzF-4TNm294QZJ2b9C7bxJT1A9PbbuKY9YnrD0CqY&_nc_ohc=i2WXglV3pboAX_mM7Ml&_nc_ht=scontent.fdac134-1.fna&oh=00_AT8cFRIzXUZL78T_IfIgKjCyRROTEqT4ncRxpVMTnlGc3A&oe=61DCBE55'
+    imgPath: 'https://i.ibb.co/hfcvFTg/donate6.jpg'
 
   },
   {
     // imgPath: {support3}
-    imgPath: 'https://scontent.fdac134-1.fna.fbcdn.net/v/t39.30808-6/266349875_426890712258476_3380541203826989172_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=b9115d&_nc_eui2=AeHZl2uebULjk2viI1LaZ7qufT5KfZiOi5R9Pkp9mI6LlI8HdPj14r6yA-JKpKujR6FvTjyNci4mo_5J1qQdMSik&_nc_ohc=-AGyQyNU_XEAX9sWD9y&_nc_ht=scontent.fdac134-1.fna&oh=00_AT-D4K26ve0MttPeFpINUUIF-cvwDhwr4Jo4AH1p1nkc5Q&oe=61DB7A31'
+    imgPath: 'https://i.ibb.co/tmhjCxL/donate1.jpg'
 
   },
 ];
@@ -91,10 +92,10 @@ const Banner = () => {
                                     2000,
                                    
                                 ]}
-                            /> 
+                          /> 
 
                          </Typography>
-                     <Typography sx={{color: 'gray'}} variant="h5"> *** If a soul lives in my blood then why don't I donate blood !! ***</Typography>
+                     <Typography sx={{color: 'gray'}} variant="h5"> --- If a soul lives in my blood then why don't I donate blood !! --- </Typography>
                     </Box>
                 </Grid>
 

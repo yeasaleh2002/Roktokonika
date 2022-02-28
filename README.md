@@ -43,7 +43,7 @@
 4. npm install @mui/icons-material
 5. npm i react-hook-form
 6. npm i axios
-7. 
+7. npm install @mui/icons-material
 8. 
 
 

@@ -41,40 +41,45 @@ function Dashboard(props) {
 
 
       <Link  style={{textDecoration: 'none'}}  to="/posts"> <Button color="inherit">Home</Button> </Link><Divider />
-       {  !admin && <Box>
-       
+       {  !admin && <Box>       
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/addPost`}> <Button color="inherit">Write Post</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/roktokonikaSupportHumanityTeamRegistration`}> <Button color="inherit">Register Support</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/roktokonikaCleanTeamRegistration`}> <Button color="inherit">Register Clean</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/bloodDonorRegistration`}> <Button color="inherit">Register Donor</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/managePosts`}> <Button color="inherit">Manage Posts</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/payNOw`}> <Button color="inherit">Donation</Button> </Link><Divider />
            </Box>
          }
           
-          { admin &&  <Box>
-                  
+          { admin &&  <Box>                  
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/roktokonikaSupportHumanityTeamRegistration`}> <Button color="inherit">Register Support</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/roktokonikaCleanTeamRegistration`}> <Button color="inherit">Register Clean</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/bloodDonorRegistration`}> <Button color="inherit">Register Donor</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/payNOw`}> <Button color="inherit">Donation</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/addPost`}> <Button color="inherit">Write Post</Button> </Link><Divider />
                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/managePosts`}> <Button color="inherit">Manage Posts</Button> </Link><Divider />
-
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/makeAdmin`}> <Button color="inherit">Make Admin</Button> </Link><Divider />
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllPosts`}> <Button color="inherit">Manage All Post</Button> </Link><Divider />
+           
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/addBanner`}> <Button color="inherit">Add Banner</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageBannerPost`}> <Button color="inherit">Manage Banner Post</Button> </Link><Divider />
+ 
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/makeAdmin`}> <Button color="inherit">Make Admin</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllPosts`}> <Button color="inherit">Manage All Post</Button> </Link><Divider />
                
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/addTeamMembers`}> <Button color="inherit">Add Team Member</Button> </Link><Divider />
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageTeamMembers`}> <Button color="inherit">Manage Team</Button> </Link>
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/updateAddTeamMembers`}> <Button color="inherit">Update Team</Button> </Link>
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/addTeamMembers`}> <Button color="inherit">Add Team Member</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageTeamMembers`}> <Button color="inherit">Manage Team</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/updateAddTeamMembers`}> <Button color="inherit">Update Team</Button> </Link><Divider />
                 
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllBloodDonor`}> <Button color="inherit">Manage Blood Donor</Button> </Link><Divider />
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllRoktokonikaCleanTeam`}> <Button color="inherit">Manage clean Team</Button> </Link><Divider />
-                 <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllRoktokonikaSupportHumanityTeam`}> <Button color="inherit">Manage Supporters</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllBloodDonor`}> <Button color="inherit">Manage Blood Donor</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllRoktokonikaCleanTeam`}> <Button color="inherit">Manage clean Team</Button> </Link><Divider />
+                <Link  style={{textDecoration: 'none'}}  to={`/dashboard/manageAllRoktokonikaSupportHumanityTeam`}> <Button color="inherit">Manage Supporters</Button> </Link><Divider />
+      
+               
          </Box>
        } 
       
       <Divider />
-      <Link  style={{textDecoration: 'none'}}  to="/posts"> <Button onClick={logOut} color="inherit">Log Out</Button> </Link><Divider />
-        <Divider />
+        <Link  style={{textDecoration: 'none'}}  to="/posts"> <Button onClick={logOut} color="inherit">Log Out</Button> </Link><Divider />
+       <Divider />
    
     </div>
   );
@@ -91,8 +96,10 @@ function Dashboard(props) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}
+        
       >
         <Toolbar>
+          
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -100,10 +107,11 @@ function Dashboard(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
+            
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-          Dashboard
+            Dashboard
           </Typography>
         </Toolbar>
       </AppBar>

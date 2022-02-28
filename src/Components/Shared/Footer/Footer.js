@@ -7,7 +7,6 @@ import {  NavLink } from 'react-router-dom';
 
 const Footer = () => {
 
-   
   
     return (
         <Box  sx={{ color: 'white' , background: '#363736' }}>
